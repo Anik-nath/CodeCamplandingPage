@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<style>
+    body{
+        background-color: #eeeeee;
+       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .nav-link{
+        color: #000;
+        font-size: 18px;
+        margin: 0px 10px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #submit{
+        font-weight: 700;
+        word-spacing: 1.6px;
+    }
+    .card button{
+        font-weight: 700;
+        word-spacing: 1.6px;
+    }
+    .icon{
+        font-size: 50px;
+        color: orange;
+        text-align: center;
+    }
+    .desc{
+        margin-top: 15px;
+    }
+    .card{
+        border: 1px solid #000;
+    }
+    .card-header{
+        background-color: #dddddd;
+    }
+    .card-body{
+        line-height: 1.8;
+        background-color: #eeeeee;
+    }
+    ul li{
+        list-style: none;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    span{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    footer .container{
+        background-color: #dddddd;
+    }
+    iframe{
+        max-width: 560px;
+        width: 100%;
+    }
+    @media(max-width:568px){
+        #img-container{
+            width: 100%;
+            text-align: center;
+        }
+        ul{
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+    @media(max-width:768px){
+        #features{
+            text-align: center;
+        }
+        .icon{
+            display: none;
+        }
+        form .form-control{
+            width: 100% !important;
+        }
+    }
+</style>
+<body>
+   <header>
+       <div class="container-fluid">
+           <nav class="navbar navbar-expand-lg pt-3">
+               <div class="container-fluid">
+                <div id="img-container">
+                    <img id="header-img" width="300px" class="navbar-brand" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+                   </div>
+                   <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How is it works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                   </ul>
+               </div>
+           </nav>
+           <div class="title py-5">
+            <h3 class="mb-3">Handcrafted, home-made masterpieces</h3>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" class="w-75">
+             <input id="email" class="form-control w-50 m-auto" type="email" placeholder="enter your email" required>
+             <button id="submit" class="btn btn-warning mt-3 px-4" value="Get Started">Get Started</button>
+            </form>
+           </div>
+       </div>
+   </header>
+   <main>
+       <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                 <div class="icon">
+                     <i class="fas fa-fire"></i>
+                 </div>
+                </div>
+                <div class="col-lg-10 col-md-10 desc">
+                    <h3 class="mb-0">Premium Materials</h3>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+            <div class="row">
+             <div class="col-lg-2 col-md-2">
+              <div class="icon">
+                  <i class="fas fa-truck"></i>
+              </div>
+             </div>
+             <div class="col-lg-10 col-md-10 desc">
+                 <h3 class="mb-0">
+                     Fast Shipping</h3>
+                 <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-lg-2 col-md-2">
+              <div class="icon">
+                  <i class="fas fa-battery-full"></i>
+              </div>
+             </div>
+             <div class="col-lg-10 col-md-10 desc">
+                 <h3 class="mb-0">Quality Assurance</h3>
+                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+             </div>
+         </div>
+        </div>
+       </section>
+       <section id="how" class="text-center py-2 mt-5">
+        <div class="container">
+            <iframe id="video" height="315px" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+       </section>
+       <section class="py-5" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h6>BASS TROMBONE</h6>
+                        </div>
+                        <div class="card-body">
+                            <h5>$700</h5>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispsum lorem ipsum lorem ipsum </p>
+                            <button class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 my-3 my-lg-0 my-md-0">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h6>TENOR TROMBONE</h6>
+                        </div>
+                        <div class="card-body">
+                            <h5>$900</h5>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispsum lorem ipsum lorem ipsum </p>
+                            <button class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h6>VALVE TROMBONE</h6>
+                        </div>
+                        <div class="card-body">
+                            <h5>$1200</h5>
+                            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispsum lorem ipsum lorem ipsum </p>
+                            <button class="btn btn-warning">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+   </main>
+   <footer>
+       <div class="container py-3">
+        <ul class="mb-0">
+            <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+        </ul>
+        <span class="px-4">Copyright 2016, Original Trombones</span>
+       </div>
+   </footer>
+</body>
+</html>
